@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
+        
+        <title>Sequenciador Móvel</title>
+    </head>
+    <body id="body-1">
+        
+        <div class="animation-board" id="animation-board-div">
+            
+            <img src="./images/email.png" class="send-msg" id="msg0">
+            <img src="./images/email.png" class="send-msg" id="msg1">
+            <img src="./images/email.png" class="send-msg" id="msg2">
+            <img src="./images/email.png" class="send-msg" id="msg3">
+            <img src="./images/email.png" class="send-msg" id="msg4">
+            <img src="./images/email.png" class="send-msg" id="msg5">
+            <img src="./images/email.png" class="send-msg" id="msg6">
+            <img src="./images/email.png" class="send-msg" id="msg7">
+            <img src="./images/email.png" class="send-msg" id="msg8">
+            <img src="./images/email.png" class="send-msg" id="msg9">
+            
+            <div class="client-group" id="client-group-div">
+                
+                
+                <ul class="client-list" id="client-list-id">
+                    <li>
+                        <img src="./images/client-m.png" id="Client_0">
+                    </li>
+                    <li>
+                        <img src="./images/client-f.png" id="Client_1">
+                    </li>
+                    <li>
+                        <img src="./images/client-m.png" id="Client_2">
+                    </li>
+                </ul>
+                <b class="client-qty" id="client-qty-id">3</b>
+                
+            </div>
+            
+            <div class="server-group" id="server-group-div">
+                <b class="server-qty" id="server-qty-id">3</b>
+                <ul class="server-list" id="server-list-id">
+                    <li>
+                        <img src="./images/data-server.png" id="Server_0">
+                    </li>
+                    <li>
+                        <img src="./images/data-server.png" id="Server_1">
+                    </li>
+                    <li>
+                        <img src="./images/data-server.png" id="Server_2">
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="sequencer-group" id="sequencer-group-id">
+                
+                <ul class="sequencer-list" id="sequencer-list-id">
+                    <li>
+                        <img src="./images/sequencer.png" id="Sequencer_0">
+                        <img src="./images/token.png" class="token" id="token">
+                    </li>
+                    <li>
+                        <img src="./images/sequencer.png" id="Sequencer_1">
+                    </li>
+                    <li>
+                        <img src="./images/sequencer.png" id="Sequencer_2">
+                    </li>
+                </ul>
+                <b class="sequencer-qty" id="sequencer-qty-id">3</b>
+
+            </div>
+            
+
+        </div>
+
+        <div class="animation-options">
+
+            <div class="slider-div">
+                <div class="slider-header">
+                    SERVERS
+                </div>
+                <input type="range" min="1" max="10" value="3" class="slider" id="server-n-slider" title="Server">
+            </div>
+            
+            <div class="slider-div">
+                <div class="slider-header">
+                    SEQUENCIADORES
+                </div>
+                <input type="range" min="1" max="8" value="3" class="slider" id="sequencer-n-slider" title="Sequenciador">
+            </div>
+
+            <div class="slider-div">
+                <div class="slider-header">
+                    CLIENTES
+                </div>
+                <input type="range" min="1" max="10" value="3" class="slider" id="client-n-slider" title="Cliente">
+            </div>
+
+            <div class="slider-div">
+                <div class="slider-header">
+                    ANIMAÇÃO
+                </div>
+                <input type="range" min="0.1" max="10" value="2" step="0.1" class="slider" id="anim-n-slider" title="Duração">
+            </div>
+                        
+            <span>
+                <img src="./images/rotate-left.png" class="rot-l" id="rotate-left">
+            </span>
+            <span>
+                <img src="./images/rotate-rigth.png" class="rot-r" id="rotate-rigth">
+            </span>
+            
+            <span>
+                <img src="./images/send.png" class="send-button" id="send">
+            </span>
+            
+        </div>
+
+    </body>
+</html>
